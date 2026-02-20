@@ -1,7 +1,11 @@
 import streamlit as st
 import cv2
-import mediapipe as mp
 import numpy as np
+import mediapipe as mp
+# Explicitly import the solutions module to force registration
+import mediapipe.python.solutions.pose as mp_pose
+import mediapipe.python.solutions.drawing_utils as mp_drawing
+
 
 # --- CONFIG & STYLING ---
 st.set_page_config(page_title="ZenStream AI", layout="wide")
